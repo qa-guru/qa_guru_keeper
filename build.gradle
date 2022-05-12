@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'guru.qa'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation(
+            'org.postgresql:postgresql:42.3.5',
+            'org.springframework:spring-jdbc:5.3.20'
+    )
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
