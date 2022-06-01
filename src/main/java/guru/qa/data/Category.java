@@ -3,7 +3,10 @@ package guru.qa.data;
 import java.util.Arrays;
 
 public enum Category {
-    SHOP("Магазины"),FUEL("АЗС"),BAR("Бары");
+    SHOP("Магазины"),
+    FUEL("АЗС"),
+    FLOWER("Цветы"),
+    BAR("Бары");
 
     private final String description;
 
